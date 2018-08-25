@@ -1,2 +1,2 @@
 # anonymous_quotes_postgres
-Anonymous Quotes - Simapy Rails Web App
+Anonymous Quotes - Simple Rails Web App
