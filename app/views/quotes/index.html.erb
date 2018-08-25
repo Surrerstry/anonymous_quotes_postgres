@@ -1,0 +1,31 @@
+
+<center>
+<br />
+<i><u><h1>&nbsp;List of quotes&nbsp;</h1></u></i>
+<br />
+
+<div class="container">
+
+  <hr />
+
+  <div class="row">
+    <% @quotes.each do |quote| %>
+      <div class="col-md-4">
+        <br />
+        <p><b>"<i><%= quote.quote %></i>"</b></p>
+        <p style="font-size:11px"><tt><%= quote.date_published.strftime('%d %B %Y') %></tt></p>
+      </div>
+      <% end %>
+  </div>
+
+  <hr />
+
+</div>
+
+<br />
+
+<div style="text-align:center !important; display:block !important">
+  <%= will_paginate @quotes, :container => false %>
+</div>
+
+</center>
